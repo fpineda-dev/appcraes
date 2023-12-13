@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>  
+  <script type="module" crossorigin src="/assets/index-3-9V-EnW.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-ttIVzzul.css">
+</head>
+    <body>
+        <div class="container">    
+            <span></span>
+            <span></span>
+            <span></span>
+            <form-body fullName="Nombres" fullLastName="Apellidos" telephone="Número de Teléfono" petition="Oración por:"></form-body> 
+        </div>            
+    </body>
+    <script>
+      window.onload = function() {
+      let customElem = document.querySelector("form-body");
+      let shadow = customElem.shadowRoot;
+
+      // return the original host element some time later
+      let hostElem = shadow.host;      
+      let anclaComponent = hostElem.shadowRoot.querySelector('a');
+      let anclaVisitors  = hostElem.shadowRoot.querySelector('#visitors')
+      let bodyDoc = document.querySelector('body');
+
+      let formComp = hostElem.shadowRoot.querySelector('#mainForm');
+      let formVisit = hostElem.shadowRoot.querySelector('#visitorsform');
+
+      formVisit.style.left = "-100%";           
+
+      anclaComponent.onclick = () =>{ 
+          console.log("YEAH!");
+          bodyDoc.classList.add('person');
+
+          
+          formComp.style.left = "-100%";
+          formVisit.style.left = "0";
+          
+        };
+
+        anclaVisitors.onclick = () =>{ 
+          console.log("OH! NO");
+          bodyDoc.classList.remove('person');
+
+          
+          formComp.style.left = "0";
+          formVisit.style.left = "-100%";
+        };       
+    }
+    </script>
+</html>
+
+
+
