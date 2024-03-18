@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Document</title>  
-  <script type="module" crossorigin src="/appcraes/assets/index-SE0u8MkZ.js"></script>
-  <link rel="stylesheet" crossorigin href="/appcraes/assets/index-zfC4s1yT.css">
+  <script type="module" crossorigin src="/appcraes/assets/index-ozmVFmkD.js"></script>
+  <link rel="stylesheet" crossorigin href="/appcraes/assets/index-zUbKHYty.css">
 </head>
     <body>
         <div class="container">    
@@ -14,6 +14,7 @@
             <span></span>
             <span></span>
             <form-body fullName="Nombres" fullLastName="Apellidos" telephone="Número de Teléfono" petition="Oración por:"></form-body> 
+            <script src="./utils/imask.js"></script>
         </div>            
     </body>
     <script>
@@ -29,6 +30,16 @@
 
       let formComp = hostElem.shadowRoot.querySelector('#mainForm');
       let formVisit = hostElem.shadowRoot.querySelector('#visitorsform');
+
+      let inputPhone = hostElem.shadowRoot.querySelector('#phone')
+
+      const maskOptios = {
+        mask: `00000000`
+      }
+
+      const mask = IMask(inputPhone, maskOptios);
+
+      console.log(`The input text is ${inputPhone}`);
 
       //formVisit.style.left = "-100%";           
 

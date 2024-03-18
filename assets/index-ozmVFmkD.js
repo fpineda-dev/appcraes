@@ -215,7 +215,7 @@ https://sweetalert2.github.io/#ajax-request`),Sr(e),typeof e.title=="string"&&(e
                        <input type="text"  name="surnames" required id="fulllastnames" placeholder="${r}" />
                     </div>
                     <div class="inputBox">
-                       <input type="text" name="telephone" placeholder="${a}" /> 
+                       <input type="text" name="telephone" id="phone" placeholder="${a}" /> 
                     </div>
                     <div class="inputBox">
                        <textarea name="petition" id="petition" cols="30" rows="10" placeholder="${c}"></textarea>
