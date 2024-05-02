@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Administrador</title>
+    <link rel="stylesheet" type="text/css" href="/appcraes/assets/adminStyle.css"> 
+  </head>
+  <body>
+     
+     
+     
+
+    <form-admin idorganization="idorganization" idupdateorganization="idupdateorganization" nameorganization="nameorganization" name="nombre" phone="idPhone"></form-admin> 
+
+     <script type="module" src="/appcraes/assets/index.js"></script> 
+  </body> 
+     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script>
+     window.onload = function() {  
+      
+      /*let customElem = document.querySelector("form-admin");
+      let shadow = customElem.shadowRoot;
+      let hostElem = shadow.host; 
+
+      let inputPhone = hostElem.shadowRoot.querySelector("admin-inputbox") //'#idPhone'
+
+      let customBox = inputPhone.shadowRoot;
+
+      let hostInput = customBox.host;
+
+      let phoneBox = hostInput.querySelector("nombre")
+      //inputPhone.innerHTML = "00000000"
+      
+
+      console.log(`The object Input Box is: ${phoneBox}`);
+
+      check(hostElem.shadowRoot.querySelector("admin-inputbox")); //document.getElementById("#idPhone")
+
+      const maskOptios = {
+        mask: `00000000`
+      }
+
+      const mask = IMask(inputPhone, maskOptios);
+      console.log(`The input text is ${inputPhone}`); */
+     }
+
+     function check(element) {
+      var attrs = element.attributes;
+      var output = "";
+
+      for (var i  = 0; i < attrs.length; i++)
+          output += attrs.item(i).name + ': ' + attrs.item(i).value + '\n';
+
+          console.log(output);
+
+      //alert(output);
+    }
+  </script> 
+</html>
+
+
+
+
+
+
